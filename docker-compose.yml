@@ -1,0 +1,9 @@
+version: "3"
+services:
+  dev:
+    build: ./.docker
+    stdin_open: true
+    tty: true
+    volumes:
+      - "./:/home/ttsuzuki"
+    working_dir: "/home/ttsuzki"
